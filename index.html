@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chor Police Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Chor Police Game</h1>
+        <div id="room-section">
+            <input type="text" id="room-code" placeholder="Enter Room Code" />
+            <button id="create-room">Create Room</button>
+            <button id="join-room">Join Room</button>
+        </div>
+        <div id="game-section" style="display: none;">
+            <h2>Welcome to Room: <span id="room-id"></span></h2>
+            <p>Your Role: <strong id="role"></strong></p>
+            <div id="action-section">
+                <p id="instructions">Police, select someone to catch!</p>
+                <div id="players"></div>
+                <button id="reveal" style="display: none;">Reveal Results</button>
+            </div>
+            <div id="results" style="display: none;">
+                <h3>Results</h3>
+                <ul id="score-board"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
